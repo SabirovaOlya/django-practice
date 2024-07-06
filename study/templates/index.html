@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>STUDY</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}
+    STUDY
+{% endblock title %}
+
+{% block body %}
     <h1>Hello, world</h1>
     <h2>Time is {% now "jS F Y H:i" %}</h2>
-</body>
-</html>
+{% endblock body %}
