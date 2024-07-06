@@ -1,0 +1,14 @@
+<ul>
+    {% for task in object_list %}
+        <li>
+            <a href="{% url 'todo_list:detail' pk=task.pk %}">
+                <p>{{ task.name }}</p>
+                {% if task.is_done %}
+                    <input type="checkbox" checked>
+                {% else %}
+                    <input type="checkbox">
+                {% endif %}
+            </a>
+        </li>
+    {% endfor %}
+</ul>

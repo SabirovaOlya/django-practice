@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    TODO List TASKS:
+{% endblock title %}
+
+{% block body %}
+    <h1>ALL TODO Tasks:</h1>
+    {% include 'todo_list/components/task_list.html' %}
+{% endblock %}

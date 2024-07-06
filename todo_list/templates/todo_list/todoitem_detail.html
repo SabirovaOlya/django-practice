@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <h1>{{ object.name }}</h1>
+    <p>Is done: 
+        {% if object.is_done %}
+            YES!!!
+        {% else %}
+            NO!!!
+        {% endif %}</p>
+{% endblock body %}
